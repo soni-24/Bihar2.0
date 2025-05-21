@@ -1,34 +1,14 @@
 /* Global Styles */
 body {
-  font-family: 'Segoe UI', sans-serif;
+
   background-color: #fff9f2;
   margin: 0;
   padding: 0;
   color: #333;
+  min-height: 100vh;
+
 }
 
-/* Header */
-header {
-  background: linear-gradient(90deg, #ff6f91, #ff9472);
-  color: #fff;
-  padding: 2rem 1rem;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2.8rem;
-  font-weight: bold;
-}
-
-header p {
-  margin-top: 0.5rem;
-  font-size: 1.2rem;
-  color: #ffe9e9;
-}
-
-/* Navbar */
 .navbar {
   background-color: rgba(139, 0, 0, 0.8);
   padding: 15px 30px;
@@ -39,6 +19,7 @@ header p {
   top: 0;
   z-index: 999;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  height: 70px;
 }
 
 .logo {
@@ -67,6 +48,14 @@ header p {
   color: #ffd700;
   transform: scale(1.1);
 }
+/* Logo Image */
+.logo-img {
+  padding-top: 10px;
+  height: 70px;
+  width: auto;
+}
+
+
 
 /* Hero Section */
 .hero {
