@@ -1,7 +1,7 @@
 /* ==== Main Website Styles ==== */
 
 body {
-    font-family: 'Baloo 2', cursive;
+    /* font-family: 'Baloo 2', cursive; */
     background-color: #fffaf4;
     margin: 0;
     padding: 0;
@@ -39,7 +39,7 @@ body {
   
   .content-box {
     flex: 1 1 350px;
-    padding: 20px;
+    padding: 10px;
   }
   
   .content-box h2 {
@@ -63,7 +63,7 @@ body {
   
   .navbar {
     background-color: rgba(139, 0, 0, 0.8);
-    padding: 15px 30px;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -71,6 +71,7 @@ body {
     top: 0;
     z-index: 999;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    height: 70px;
   }
   
   .logo {

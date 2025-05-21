@@ -7,35 +7,30 @@
   <link rel="stylesheet" href="Dia $ Achi.css"/>
 </head>
 <body>
- <nav class="navbar1">
-       
-        <div class="logo">
-            <img src="image/bihar_logo.svg" alt="Apna Bihar Logo" id="logoImg">
-          </div>
-          </div>
-        <ul class="nav-links">
-          <li><a href="home.html">Home</a></li>
-          <li><a href="food.html">Food</a></li>
-          <li><a href="Festival.html">Festival</a></li>
-          <li><a href="Art.html">Art</a></li>
-          <li><a href="Dialects.html">Dialects</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="quiz.html">quiz</a></li>
-        </ul>
-      </nav>
+  <div class="navbar">
+    <div class="logo">
+      <img src="image/bihar_logo.svg" alt="Bihar Logo" class="logo-img">
+    </div>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="food.html">Food</a></li>
+      <li><a href="Festival.html">Festival</a></li>
+      <li><a href="art.html">Art</a></li>
+      <li><a href="Dialects.html">Dialect</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="quiz.html">quiz</a></li>
+    </ul>
+  </div>
 
 
- 
 
  
-  <!-- Hero Section -->
-  <header class="hero">
-    <h2>Bihar's Rich Language Tapestry</h2>
-    <p>Discover the vibrant dialects spoken across Bihar, each carrying centuries of stories, songs, and cultural traditions.</p>
-  </header>
+
+ 
+ 
 
   <!-- Language Navigation Section -->
-  <nav class="navbar">
+  <nav class="navbar-langauge">
     <!-- Bhojpuri -->
     <div class="menu">
       <div class="menu-title">Bhojpuri</div>
@@ -452,83 +447,7 @@
     <p>#ProudToBeBihari | #ExploreBihar | #BiharCulture</p>
   </div>
 </footer>
-
-  <!-- Back to Top Button -->
-  <div class="back-to-top" id="backToTop">↑</div>
-
-  <!-- Audio Player -->
-  <div class="audio-player" id="audioPlayer">
-    <div class="audio-info">
-      <span class="audio-title" id="audioTitle">Dialect Sample</span>
-    </div>
-    <div class="audio-controls">
-      <button class="audio-btn" id="audioPlayPause">⏸</button>
-      <div class="audio-progress" id="audioProgress">
-        <div class="progress-bar" id="progressBar"></div>
-      </div>
-    </div>
-    <button class="audio-close" id="audioClose">×</button>
-  </div>
-
-  <!-- JavaScript -->
-  <script>
-    // Loading Animation
-    window.addEventListener('load', function() {
-      setTimeout(function() {
-        document.getElementById('loadingScreen').classList.add('hide');
-      }, 1000);
-    });
-
-    // Language Switcher
-    const langBtn = document.getElementById('langBtn');
-    const langOptions = document.getElementById('langOptions');
-
-    langBtn.addEventListener('click', function() {
-      langOptions.classList.toggle('show');
-    });
-
-    document.addEventListener('click', function(event) {
-      if (!langBtn.contains(event.target) && !langOptions.contains(event.target)) {
-        langOptions.classList.remove('show');
-      }
-    });
-
-    // Back to Top Button
-    const backToTopBtn = document.getElementById('backToTop');
-
-    window.addEventListener('scroll', function() {
-      if (window.scrollY > 300) {
-        backToTopBtn.classList.add('show');
-      } else {
-        backToTopBtn.classList.remove('show');
-      }
-    });
-
-    backToTopBtn.addEventListener('click', function() {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
-    });
-
-    // Interactive Hover Effects for Cards
-    const dialectCards = document.querySelectorAll('.dialect-card');
-    
-    dialectCards.forEach(card => {
-      card.addEventListener('mouseenter', function() {
-        this.style.transform = 'translateY(-10px)';
-        this.style.boxShadow = '0 15px 20px rgba(0,0,0,0.15)';
-        const img = this.querySelector('.card-image img');
-        img.style.transform = 'scale(1.1)';
-      });
-      
-      card.addEventListener('mouseleave', function() {
-        this.style.transform = '';
-        this.style.boxShadow = '';
-        const img = this.querySelector('.card-image img');
-        img.style.transform = '';
-      });
-    });
+ 
   </script>
 </body>
 </html>
